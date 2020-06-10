@@ -4,7 +4,7 @@ module.exports = {
   // https://eslint.vuejs.org/rules/#priority-c-recommended-minimizing-arbitrary-choices-and-cognitive-overhead
   // https://github.com/miherlosev/eslint-plugin-testcafe
   extends: [
-    "plugin:vue/essential",
+    "plugin:vue/recommended",
     "eslint:recommended",
     "@vue/prettier",
   ],
