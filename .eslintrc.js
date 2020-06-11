@@ -90,6 +90,14 @@ module.exports = {
         ignores: [],
       },
     ],
+    // https://medium.com/better-programming/using-eslint-to-speed-up-code-reviews-95c923c0d8a5
+    'no-restricted-syntax': [ 
+      'error',
+      {
+        selector: "CallExpression[callee.name='require']",
+        message: 'Require is no longer allowed, please use an import statement'
+      }
+    ],
     'array-callback-return': 'off',
     'handle-callback-err': 'off',
     'no-return-assign': 'off',
@@ -104,6 +112,7 @@ module.exports = {
     'vue/require-prop-type-constructor': 0,
     'no-bitwise': 0,
     'vue/no-v-html': 0*/
+    
   },
   overrides: [
     {
